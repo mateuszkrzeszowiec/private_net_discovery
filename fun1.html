@@ -1,0 +1,41 @@
+<html>
+
+<head>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+</head>
+
+<body>
+
+<script>
+
+$( document ).ready(function() {
+	var count = 0;
+	for (var a = 38; a <= 255; a++) {
+		for (var b = 214; b <= 255; b++) {
+			for (var c = 1; c < 255; c++) {
+				if(count < 1000) {				
+					var newImg = $('#template').clone();
+					newImg.attr('src', 'http://placehold.it/150&text=10.' + a + '.' + b + '.'  + c);
+					newImg.attr('id', 'id'+ count);
+					newImg.attr('width', '100px');
+					newImg.attr('height', '100px');
+					newImg.appendTo('#images');
+					newImg.css('display', 'block');
+					//newImg.attr('src', 'http://' + '10.' + a + '.' + b + '.'  + c + '/Content/themes/base/images/ui-icons_888888_256x240.png');
+					newImg.attr('src', 'https://' + '10.' + a + '.' + b + '.'  + c + ':8080/favicon.ico');
+					count++;
+				}
+			}
+		}
+	}
+});
+
+</script>
+
+<div id="images" style="width: 100%"><img id="template" style="float: left; display: none;" src="http://placehold.it/150&text=pending"></div>
+
+
+</body>
+</html>
