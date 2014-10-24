@@ -17,7 +17,7 @@ $( document ).ready(function() {
 			for (var c = 1; c < 255; c++) {
 				if(count < 1000) {				
 					var newImg = $('#template').clone();
-					newImg.attr('src', 'http://placehold.it/150&text=10.' + a + '.' + b + '.'  + c);
+					//newImg.attr('src', 'http://placehold.it/150&text=10.' + a + '.' + b + '.'  + c);
 					newImg.attr('id', 'id'+ count);
 					newImg.attr('width', '100px');
 					newImg.attr('height', '100px');
@@ -34,7 +34,7 @@ $( document ).ready(function() {
 
 </script>
 
-<div id="images" style="width: 100%"><img id="template" style="float: left; display: none;" src="http://placehold.it/150&text=pending"></div>
+<div id="images" style="width: 100%"><img id="template" style="float: left; display: none;" src=""></div>
 
 
 </body>
