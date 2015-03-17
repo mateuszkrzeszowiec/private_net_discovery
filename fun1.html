@@ -12,9 +12,9 @@
 
 $( document ).ready(function() {
 	var count = 0;
-	for (var a = 38; a <= 255; a++) {
-		for (var b = 216; b <= 255; b++) {
-			for (var c = 1; c < 255; c++) {
+	for (var a = 168; a <= 255; a++) {
+		for (var b = 0; b <= 255; b++) {
+			for (var c = 0; c < 255; c++) {
 				if(count < 10) {				
 					var newImg = $('#template').clone();
 					newImg.attr('id', 'id'+ count);
@@ -22,8 +22,8 @@ $( document ).ready(function() {
 					newImg.attr('height', '100px');
 					newImg.appendTo('#images');
 					newImg.css('display', 'block');
-					//newImg.attr('src', 'http://' + '10.' + a + '.' + b + '.'  + c + '/Content/themes/base/images/ui-icons_888888_256x240.png');
-					newImg.attr('src', 'http://' + '10.' + a + '.' + b + '.'  + c + '/favicon.ico');
+					//newImg.attr('src', 'http://' + '192.' + a + '.' + b + '.'  + c + '/Content/themes/base/images/ui-icons_888888_256x240.png');
+					newImg.attr('src', 'http://' + '192.' + a + '.' + b + '.'  + c + '/favicon.ico');
 					count++;
 				} else {
 					return;
@@ -35,7 +35,7 @@ $( document ).ready(function() {
 
 </script>
 
-<div id="images" style="width: 100%"><img id="template" style="float: left; display: none;" src=""></div>
+<div id="images" style="width: 100%"><img id="template" style="float: left; display: none;" src="https://lh5.googleusercontent.com/-FbZrerv9Ft0/VPE0WmWt3iI/AAAAAAAAB2Y/f7p9JNP4XJc/w152-h256-no/rabbit%5B1%5D.gif"></div>
 
 
 </body>
