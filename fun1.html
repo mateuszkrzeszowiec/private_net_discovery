@@ -15,7 +15,7 @@ $( document ).ready(function() {
 	for (var a = 38; a <= 255; a++) {
 		for (var b = 216; b <= 255; b++) {
 			for (var c = 1; c < 255; c++) {
-				if(count < 1000) {				
+				if(count < 10) {				
 					var newImg = $('#template').clone();
 					newImg.attr('id', 'id'+ count);
 					newImg.attr('width', '100px');
@@ -25,6 +25,8 @@ $( document ).ready(function() {
 					//newImg.attr('src', 'http://' + '10.' + a + '.' + b + '.'  + c + '/Content/themes/base/images/ui-icons_888888_256x240.png');
 					newImg.attr('src', 'http://' + '10.' + a + '.' + b + '.'  + c + '/favicon.ico');
 					count++;
+				} else {
+					return;
 				}
 			}
 		}
