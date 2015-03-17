@@ -12,6 +12,7 @@
 
 $( document ).ready(function() {
 	var count = 0;
+	goto:
 	for (var a = 168; a <= 255; a++) {
 		for (var b = 0; b <= 255; b++) {
 			for (var c = 0; c < 255; c++) {
@@ -27,7 +28,7 @@ $( document ).ready(function() {
 					count++;
 				} else {
 					alert('gotowe!');
-					return;
+					break goto;
 				}
 			}
 		}
